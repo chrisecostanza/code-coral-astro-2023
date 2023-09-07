@@ -3,9 +3,9 @@ interface Props {
 	title: string;
 }
 
-const { title, url = Astro.url } = Astro.props;
+const { title } = Astro.props;
 
-// import { Image } from 'astro:assets';
+import { GoogleAnalytics } from 'astro-analytics';
 import SquareLogo from '../images/code-coral-logo-square.png';
 import { SEO } from "astro-seo";
 import '@fontsource-variable/raleway';
@@ -29,7 +29,6 @@ import Footer from '../components/Footer.astro';
         basic: {
           title: title,
           type: "website",
-					url: url,
           image: SquareLogo.src,
         }
       }}
@@ -45,6 +44,8 @@ import Footer from '../components/Footer.astro';
         ],
       }}
     />
+
+		<GoogleAnalytics id="G-PYCSJT14TP" />
 	</head>
 	<body>
 		<Header />

@@ -12,6 +12,7 @@
   "dependencies": {
     "@fontsource-variable/raleway": "^5.0.9",
     "astro": "^3.0.6",
+    "astro-analytics": "^2.7.0",
     "astro-seo": "^0.8.0",
     "normalize.css": "^8.0.1"
   }
