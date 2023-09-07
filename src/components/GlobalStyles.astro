@@ -1,0 +1,137 @@
+<style is:global>
+	:root {
+		--body-font: "Raleway", sans-serif;
+    --weight-regular: 400;
+    --weight-medium: 500;
+		--black: #000;
+		--white: #fff;
+		--charcoal: #444;
+    --light-gray: #848484;
+		--orange: #ff785d;
+    --orange-opaque: rgba(255, 120, 93, 0.08);
+		--red: #f23e43;
+		--mint: #bcffde;
+	}
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+		scroll-behavior: smooth;
+		box-sizing: border-box;
+	}
+
+	body {
+		position: relative;
+		font-family: var(--body-font);
+		font-size: 20px;
+		line-height: 1.2;
+    padding: 0;
+    margin: 0;
+	}
+
+  @media (width >= 768px) {
+    body {
+      font-size: 22px;
+    }
+  }
+
+  .container {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+	}
+
+  @media (width >= 1024px) {
+    .container {
+      padding: 0;
+    }
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: var(--weight-medium);
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin: 0 0 40px;
+  }
+
+  h3 {
+    font-size: 27px;
+    margin: 0 0 10px;
+  }
+
+  a {
+    color: var(--orange);
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  @media (width >= 768px) {
+    p {
+      font-size: 21px;
+    }
+  }
+
+  .page p {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .page h2 {
+    margin-bottom: 20px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .btn {
+    text-decoration: none;
+    color: transparent;
+    font-weight: var(--weight-medium);
+    font-size: 20px;
+  }
+
+  .btn span {
+    text-decoration: underline;
+    background: linear-gradient(to right, var(--orange), var(--red));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    text-decoration-color: var(--orange);
+  }
+
+  .btn span:hover {
+    background: linear-gradient(to left, var(--orange), var(--red));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .btn::before {
+    content: "<";
+    color: var(--charcoal);
+    margin-right: 7px;
+    text-decoration: none !important;
+  }
+
+  .btn::after {
+    content: ">";
+    color: var(--charcoal);
+    margin-left: 7px;
+    text-decoration: none;
+  }
+</style>

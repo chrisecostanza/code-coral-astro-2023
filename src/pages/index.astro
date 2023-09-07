@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import WorkSection from '../components/WorkSection.astro';
+import ClientSection from '../components/ClientSection.astro';
+import ContactSection from '../components/ContactSection.astro';
+---
+
+<Layout title="Front-end Developer, Web Designer - Cincinnati, Ohio - Code Coral">
+	<main class="homepage-main">
+		<HeroSection />
+		<WorkSection />
+		<ClientSection />
+		<ContactSection />
+	</main>
+</Layout>
+
+<style>
+	main.homepage-main {
+    background-image: url(../images/coral-bg-both.png);
+    background-position: center 65px;
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+</style>

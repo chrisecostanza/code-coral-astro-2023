@@ -1,0 +1,125 @@
+<div id="contact">
+  <div class="container">
+    <h2>The Path To My Inbox</h2>
+    <p>Let me know how I can help you with your website needs. Whether it's over virtual coffee or real pad thai let's get together!</p>
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks">
+      <input type="hidden" name="form-name" value="contact" />
+      <div><input name="bot-field" /></div>
+      <div>
+        <label>First Name</label>
+        <input type="text" name="fname" required />
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input type="text" name="lname" required />
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" name="email" required />
+      </div>
+      <div>
+        <label>Project Type</label>
+        <select name="type[]">
+          <option value="">Select a Project Type</option>
+          <option value="design">Website Design</option>
+          <option value="development">Website Development</option>
+          <option value="both">Both</option>
+        </select>
+      </div>
+      <div>
+        <label>Project Budget</label>
+        <select name="budget[]">
+          <option value="">Select a Budget</option>
+          <option value="$0-5k">$0-5k</option>
+          <option value="$5-15k">$5-15k</option>
+          <option value="$15k+">$15k+</option>
+        </select>
+      </div>
+      <div>
+        <label>Additional Details...</label>
+        <textarea name="details"></textarea>
+      </div>
+      <div>
+        <button type="submit" class="btn"><span>Talk To You Soon!</span></button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<style>
+	#contact {
+		text-align: center;
+    max-width: 750px;
+    margin: 0 auto 110px;
+	}
+
+  form {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  form input[name="bot-field"] {
+    display: none;
+  }
+
+  form label {
+    font-size: 20px;
+    padding-bottom: 10px;
+    display: block;
+    text-align: left;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form select,
+  form textarea {
+    appearance: none;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    border: 1px solid var(--orange);
+    border-radius: 3px;
+    margin-bottom: 30px;
+    font-size: 19px;
+    font-weight: var(--weight-regular);
+    font-family: var(--body-font);
+    background-color: var(--white);
+    color: var(--charcoal);
+    box-sizing: border-box;
+  }
+
+  form select {
+    cursor: pointer;
+  }
+
+  form textarea {
+    height: 120px;
+    line-height: 1.2;
+    padding: 10px;
+  }
+
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form select:focus,
+  form textarea:focus {
+    background-color: var(--charcoal);
+    border-color: var(--mint);
+    color: var(--mint);
+    outline: none;
+  }
+
+  form button[type="submit"] {
+    appearance: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .contactContent button[type="submit"]:hover,
+  .contactContent button[type="submit"]:focus {
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-text-hover);
+    cursor: pointer;
+  }
+</style>

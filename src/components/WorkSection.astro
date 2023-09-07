@@ -1,0 +1,134 @@
+---
+import { Image } from 'astro:assets';
+import LivingChurch from '../images/living-church-graphic.jpg';
+import GoodSense from '../images/good-sense-graphic.jpg';
+import Fintech from '../images/fintech-graphic.jpg';
+import PunchBug from '../images/punch-bug-graphic.jpg';
+import InteriorDetails from '../images/interior-details-graphic.jpg';
+import HillHearBetter from '../images/hill-hear-better-graphic.jpg';
+---
+
+<div id="work">
+  <div class="container">
+    <h2>A Bit Of Work</h2>
+    <div class="work-grid">
+
+      <div class="work-item">
+        <a href="https://living-church.com" target="_blank" rel="noopener">
+          <Image src={LivingChurch} alt="Living Church Graphic" width="1100" height="620" />
+        </a>
+        <p>Designed & Developed: Code Coral</p>
+        <h3>
+          <a href="https://living-church.com" target="_blank" rel="noopener">Living Church</a>
+        </h3>
+        <p>GatsbyJs with Contentful CMS</p>
+      </div>
+
+      <div class="work-item">
+        <a href="https://goodsensemovement.org" target="_blank" rel="noopener">
+          <Image src={GoodSense} alt="Good Sense Graphic" width="1100" height="620" />
+        </a>
+        <p>Designed: <a href="https://brianmaierjr.com" target="_blank" rel="noopener">Brian Maier Jr.</a> & Developed: Code Coral</p>
+        <h3>
+          <a href="https://goodsensemovement.org" target="_blank" rel="noopener">Good Sense Movement</a>
+        </h3>
+        <p>Wordpress</p>
+      </div>
+
+      <div class="work-item">
+        <a href="https://fintechlegal.io" target="_blank" rel="noopener">
+          <Image src={Fintech} alt="Fintech Law Graphic" width="1100" height="620" />
+        </a>
+        <p>Designed & Developed: Code Coral</p>
+        <h3><a href="https://fintechlegal.io" target="_blank" rel="noopener">Fintech Law</a></h3>
+        <p>GatsbyJS with Contentful CMS</p>
+      </div>
+
+      <div class="work-item">
+        <a href="https://www.punchbugmarketing.com" target="_blank" rel="noopener">
+          <Image src={PunchBug} alt="Punch Bug Graphic" width="1100" height="620" />
+        </a>
+        <p>Designed & Developed: Code Coral</p>
+        <h3><a href="https://www.punchbugmarketing.com" target="_blank" rel="noopener">Punch Bug Marketing</a></h3>
+        <p>Wordpress - Contracted by <a href="https://www.punchbugmarketing.com" target="_blank" rel="noopener">Punch Bug Marketing</a></p>
+      </div>
+
+      <div class="work-item">
+        <a href="https://interior-details.com" target="_blank" rel="noopener">
+          <Image src={InteriorDetails} alt="Interior Details Graphic" width="1100" height="620" />
+        </a>
+        <p>Designed & Developed: Code Coral</p>
+        <h3><a href="https://interior-details.com" target="_blank" rel="noopener">Interior Details</a></h3>
+        <p>GatsbyJS / WP CMS - Contracted by <a href="https://www.punchbugmarketing.com" target="_blank" rel="noopener">Punch Bug Marketing</a></p>
+      </div>
+
+      <div class="work-item">
+        <a href="https://hillhearbetter.com" target="_blank" rel="noopener">
+          <Image src={HillHearBetter} alt="Hill Hear Better Graphic" width="1100" height="620" />
+        </a>
+        <p>Designed & Developed: Code Coral</p>
+        <h3><a href="https://hillhearbetter.com" target="_blank" rel="noopener">Hill Hear Better</a></h3>
+        <p>Wordpress - Contracted by <a href="https://www.punchbugmarketing.com" target="_blank" rel="noopener">Punch Bug Marketing</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+	#work {
+		margin-bottom: 110px;
+	}
+
+	#work h2 {
+		margin-bottom: 40px;
+	}
+
+  .work-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    justify-content: center;
+    grid-gap: 60px 100px;
+  }
+
+  @media (width >= 768px) {
+    .work-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .work-item img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border: 1px solid var(--light-gray);
+    border-radius: 7px;
+  }
+
+  .work-item h3 a {
+    color: var(--charcoal);
+    text-decoration: none;
+  }
+
+  .work-item h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .work-item p a {
+    color: var(--orange);
+  }
+
+  .work-item p {
+    font-size: 21px;
+    margin: 0 0 9px 0;
+  }
+
+  .work-item p:first-child {
+    margin-bottom: 10px;
+  }
+
+  .work-item p:last-child {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+</style>

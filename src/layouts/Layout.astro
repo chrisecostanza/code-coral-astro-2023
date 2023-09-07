@@ -1,0 +1,55 @@
+--- 
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+import { Image } from 'astro:assets';
+import SquareLogo from '../images/code-coral-logo-square.png';
+import { SEO } from "astro-seo";
+import '@fontsource-variable/raleway';
+import GlobalStyles from '../components/GlobalStyles.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/code-coral-favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+
+		<SEO
+      title={title}
+      description = "Front-end Developer, Designer, and Friend - Hi! I'm Chris Costanza. I design & build my clients sweet looking, fast websites."
+      openGraph={{
+        basic: {
+          title: `${title}`,
+          type: "website",
+          image: `${SquareLogo.src}`,
+        }
+      }}
+      twitter={{
+        creator: "@chrisecostanza"
+      }}
+      extend={{
+        // extending the default meta tags
+        meta: [
+          { name: "twitter:image", content: `${SquareLogo.src}` },
+          { name: "twitter:title", content: `${title}` },
+          { name: "twitter:description", content: "Front-end Developer, Designer, and Friend - Hi! I'm Chris Costanza. I design & build my clients sweet looking, fast websites." },
+        ],
+      }}
+    />
+	</head>
+	<body>
+		<Header />
+		<slot />
+		<Footer />
+	</body>
+</html>
+
+<GlobalStyles />
