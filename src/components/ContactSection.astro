@@ -6,19 +6,19 @@
       <input type="hidden" name="form-name" value="contact" />
       <div><input name="bot-field" /></div>
       <div>
-        <label>First Name</label>
+        <label for="fname">First Name</label>
         <input type="text" name="fname" required />
       </div>
       <div>
-        <label>Last Name</label>
+        <label for="lname">Last Name</label>
         <input type="text" name="lname" required />
       </div>
       <div>
-        <label>Email</label>
+        <label for="email">Email</label>
         <input type="email" name="email" required />
       </div>
       <div>
-        <label>Project Type</label>
+        <label for="type[]">Project Type</label>
         <select name="type[]">
           <option value="">Select a Project Type</option>
           <option value="design">Website Design</option>
@@ -27,7 +27,7 @@
         </select>
       </div>
       <div>
-        <label>Project Budget</label>
+        <label for="budget[]">Project Budget</label>
         <select name="budget[]">
           <option value="">Select a Budget</option>
           <option value="$0-5k">$0-5k</option>
@@ -36,7 +36,7 @@
         </select>
       </div>
       <div>
-        <label>Additional Details...</label>
+        <label for="details">Additional Details...</label>
         <textarea name="details"></textarea>
       </div>
       <div>
