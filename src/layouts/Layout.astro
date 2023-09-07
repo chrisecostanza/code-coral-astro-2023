@@ -5,7 +5,7 @@ interface Props {
 
 const { title, url = Astro.url } = Astro.props;
 
-import { Image } from 'astro:assets';
+// import { Image } from 'astro:assets';
 import SquareLogo from '../images/code-coral-logo-square.png';
 import { SEO } from "astro-seo";
 import '@fontsource-variable/raleway';
@@ -27,10 +27,10 @@ import Footer from '../components/Footer.astro';
       description = "Front-end Developer, Designer, and Friend - Hi! I'm Chris Costanza. I design & build my clients sweet looking, fast websites."
       openGraph={{
         basic: {
-          title: `${title}`,
+          title: title,
           type: "website",
-					url: `${url}`,
-          image: `${SquareLogo.src}`,
+					url: url,
+          image: SquareLogo.src,
         }
       }}
       twitter={{
@@ -39,8 +39,8 @@ import Footer from '../components/Footer.astro';
       extend={{
         // extending the default meta tags
         meta: [
-          { name: "twitter:image", content: `${SquareLogo.src}` },
-          { name: "twitter:title", content: `${title}` },
+          { name: "twitter:image", content: SquareLogo.src },
+          { name: "twitter:title", content: title },
           { name: "twitter:description", content: "Front-end Developer, Designer, and Friend - Hi! I'm Chris Costanza. I design & build my clients sweet looking, fast websites." },
         ],
       }}
