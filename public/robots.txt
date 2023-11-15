@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codecoral.com/sitemap-index.xml
