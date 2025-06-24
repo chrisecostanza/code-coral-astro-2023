@@ -16,5 +16,9 @@
     "astro-analytics": "^2.7.0",
     "astro-seo": "^0.8.4",
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.0",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }

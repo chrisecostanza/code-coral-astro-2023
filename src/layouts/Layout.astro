@@ -23,25 +23,25 @@ import Footer from '../components/Footer.astro';
     <link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="generator" content={Astro.generator} />
 
-		<SEO
+    <SEO
       title={title}
-      description = "Front-end Developer, Designer, and Friend - Hi! I'm Chris Costanza. I design & build my clients sweet looking, fast websites."
+      description="Web Designer, Front-end Developer and Friend - Hi! I'm Chris Costanza. I design & build my clients sweet looking, fast websites from Cincinnati, Ohio."
       openGraph={{
         basic: {
           title: title,
           type: "website",
           image: SquareLogo.src,
-        }
+        },
       }}
       twitter={{
-        creator: "@chrisecostanza"
+        creator: "@chrisecostanza",
       }}
       extend={{
         // extending the default meta tags
         meta: [
           { name: "twitter:image", content: SquareLogo.src },
           { name: "twitter:title", content: title },
-          { name: "twitter:description", content: "Front-end Developer, Designer, and Friend - Hi! I'm Chris Costanza. I design & build my clients sweet looking, fast websites." },
+          { name: "twitter:description", content: "Web Designer, Front-end Developer and Friend - Hi! I'm Chris Costanza. I design & build my clients sweet looking, fast websites from Cincinnati, Ohio." },
         ],
       }}
     />
