@@ -7,19 +7,19 @@
       <div><input name="bot-field" /></div>
       <div>
         <label for="fname">First Name</label>
-        <input type="text" name="fname" required />
+        <input type="text" name="fname" aria-labelledby="fname" required />
       </div>
       <div>
         <label for="lname">Last Name</label>
-        <input type="text" name="lname" required />
+        <input type="text" name="lname" aria-labelledby="lname" required />
       </div>
       <div>
         <label for="email">Email</label>
-        <input type="email" name="email" required />
+        <input type="email" name="email" aria-labelledby="email" required />
       </div>
       <div>
-        <label for="type[]">Project Type</label>
-        <select name="type[]">
+        <label for="type">Project Type</label>
+        <select name="type[]" id="type" aria-labelledby="type">
           <option value="">Select a Project Type</option>
           <option value="design">Website Design</option>
           <option value="development">Website Development</option>
@@ -27,8 +27,8 @@
         </select>
       </div>
       <div>
-        <label for="budget[]">Project Budget</label>
-        <select name="budget[]">
+        <label for="budget">Project Budget</label>
+        <select name="budget[]" id="budget" aria-labelledby="budget">
           <option value="">Select a Budget</option>
           <option value="$0-5k">$0-5k</option>
           <option value="$5-15k">$5-15k</option>
@@ -37,7 +37,7 @@
       </div>
       <div>
         <label for="details">Additional Details...</label>
-        <textarea name="details"></textarea>
+        <textarea name="details" aria-labelledby="details"></textarea>
       </div>
       <div>
         <button type="submit" class="btn"><span>Talk To You Soon!</span></button>
